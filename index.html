@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clock & Countdown</title>
+</head>
+
+<body>
+    <div class="bg-video-container">
+        <video src="videos/bg.mp4" class="bg-video" autoplay loop muted></video>
+    </div>
+    <!--
+        表盘的结构：
+            (1) 标题 "Clock"
+            (2) 三个表针 -- 3 divs
+            (3) 倒计时 -- 标题 + 数字
+    -->
+    <div class="clock">
+        <div class="clock__face">
+            <h1 class="clock__heading">学海无涯苦作舟</h1>
+            <div class="clock__hands">
+                <div class="clock__hand clock__hours"></div>
+                <div class="clock__hand clock__minutes"></div>
+                <div class="clock__hand clock__seconds"></div>
+            </div>
+            <div class="countdown">
+                <h2 class="countdown__heading">新年倒计时</h2>
+                <div class="countdown__body">
+                    <div class="countdown__days">0</div>:
+                    <div class="countdown__hours">0</div>:
+                    <div class="countdown__minutes">0</div>:
+                    <div class="countdown__seconds">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
